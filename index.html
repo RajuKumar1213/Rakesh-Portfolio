@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>personal portfolio - Mr. Raju</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://kit.fontawesome.com/80aeb5ef42.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <h1 class="logo">Aci<span>d</span> Bo<span>y.</span></h1>
+                <ul id="sidemenu">
+                    <i class="fa-solid fa-xmark" onclick="closemunu()"></i>
+                    <li><a class="nav-link" href="#header">Home</a></li>
+                    <li><a class="nav-link" href="#about">About</a></li>
+                    <li><a class="nav-link" href="#services">Services</a></li>
+                    <li><a class="nav-link" href="#portfolio">Portfolio</a></li>
+                    <li><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmunu()"></i>
+            </nav>
+
+            <div class="header-text">
+                <div class="header-col-1">
+                    <p> <i class="fa-brands fa-youtube"></i> Youtuber</p>
+                    <h2>Hi I,m <span>Rakesh</span> <br> from Dhanbad, and I'm passionate of :</h2>
+
+                    <!-- Element to contain animated typing -->
+                    <span id="element"></span>
+                </div>
+                <div class="header-col-2">
+                    <img src="./images/profile-modified.png" alt="header-background" class="header-background">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ----------------About----------------- -->
+
+    <div id="about">
+        <div class="container">
+            <h1 class="sub-title">About Me</h1>
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="./images/rekesh-about.jpg" alt="" class="about-img">
+                </div>
+                <div class="about-col-2">
+                    <p class="paragraph">HI. I am Rakesh from Dhanbad . I am 20 Years old . I am a youtuber and my
+                        youtube channel name is Acid Boy , and I started blogging at youtube in 2022 December. I love
+                        to make blogging videos. Till now i have uploaded 50+ videos on my youtubr channel. Usually I shoot my
+                        videos by GoPro as well as Iphone , So that the video quality is very enhanced and looks very
+                        awesome. I am a Engineering student too. I study in Silli polytechnic, which is suited in
+                        the Ranchi district of the Jharkhand State. Right now I am in 4rth semester and My branch is
+                        Computer Science . I took addmission at silli polytechnic in 2021. I will be passout from here in
+                        2023. After that I will do bTech. </p>
+                    <div class="tab-title">
+                        <p class="tab-link active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-link" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-link" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-content active-tab" id="skills">
+                        <ul>
+                            <li><span>Video shooting</span> <br> Hi-end Videos Shooting</li>
+                            <li><span>Video Editing</span><br> Editing Videos professionally</li>
+                            <li><span>Managing Channels</span> <br> Manage Youtube channels</li>
+                            <li><span>Touch Typing</span> <br>Touch Typing , speed 60+ WPM</li>
+                        </ul>
+                    </div>
+                    <div class="tab-content" id="experience">
+                        <ul>
+                            <li><span>2023-current</span> <br>Shooting Videos professionally and Editing Videos
+                                professionally .</li>
+                            <li><span>2022 - 2023</span> <br>Started Video Editing and video recording</li>
+                            <li><span>2021-2022 </span> <br> Just start my jurney in computer science and learned touch
+                                typing </li>
+                        </ul>
+                    </div>
+                    <div class="tab-content" id="education">
+                        <ul>
+                            <li><span>2018</span> <br>Passed Tenth from Rajkamal School Dhanbad.</li>
+                            <li><span>2020</span> <br>Passed Twelth from Rajkamal School Dhanbad.</li>
+                            <li><span>2021 </span> <br>Took addmission form CSE branch in silli poly and right now
+                                I am in 4th sem.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ---------------My services ----------- -->
+
+    <div class="" id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="service-box">
+                <div>
+                    <i class="fa-solid fa-video"></i>
+                    <h2>Video Interface</h2>
+                    <p class="paragraph">Video Interface is one of the most important things which will be taken care
+                        while Editing any video. So I always focus to keep the Interface attractive. </p>
+                    <a href="#">Learn More...</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>Edit Video</h2>
+                    <p class="paragraph">Initially every video is like the died thing but after editing the video it
+                        becomes alive.</p>
+                    <a href="#">Learn More...</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-camera"></i>
+                    <h2>Shoot Video</h2>
+                    <p class="paragraph">Shooting is an art. There is a differece between the shooting video and Shooted
+                        Video by me. </p>
+                    <a href="#">Learn More...</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- -----------------portfolio.----------------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="./images/instastory.jpg" alt="">
+                    <div class="layer">
+                        <h3>Social Media Story</h3>
+                        <p class="paragraph">Shoot the video from us for your daily social media story. This will
+                            genuinely prove what you are.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./images/youtube.jpg" alt="">
+                    <div class="layer">
+                        <h3>Youtube video</h3>
+                        <p class="paragraph">As you know I am a youtuber So sooting the video by us is just empowering
+                            the video.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./images/shoot.jpg" alt="">
+                    <div class="layer">
+                        <h3>Shopping Add</h3>
+                        <p class="paragraph">Every thing you shop online and that product come to by add . So making an
+                            add for the shopping is also our goal.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+
+    <!-- -----------contact-------------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> acidRaksh@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i> +91 6206762728</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fa-brands fa-facebook"></a></i>
+                        <a href="#"><i class="fa-brands fa-square-instagram"></a></i>
+                        <a href="#"><i class="fa-brands fa-square-twitter"></a></i>
+                        <a href="#"><i class="fa-brands fa-linkedin"></a></i>
+                    </div>
+                    <a href="./images/my-cv.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet" class="form">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your email" required>
+                        <textarea rows="8" name="Message" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                        <p id="msg"></p>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright &copy 2023 | Made with <i class="fa-sharp fa-solid fa-heart"></i> by Mr. Raju Vishwakarma.</p>
+        </div>
+    </div>
+
+    <script>
+        const tabContents = document.getElementsByClassName("tab-content");
+        const tabLinks = document.getElementsByClassName("tab-link");
+
+        function opentab(tabname) {
+            for (tabLink of tabLinks) {
+                tabLink.classList.remove("active-link");
+            }
+            for (tabContent of tabContents) {
+                tabContent.classList.remove("active-tab");
+            }
+
+            event.currentTarget.classList.add("active-link")
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script>
+        const sidemenu = document.getElementById("sidemenu");
+
+        function openmunu() {
+            sidemenu.style.right = "0";
+        }
+        function closemunu() {
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyti-2-hkuHvMx9o0_GKrP-PuFJjxeKJSk-b_FB_0kHIs1hT0xBh5_czPkid-SCr1c1/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg");
+
+        form.addEventListener('submit', e => {
+            msg.innerHTML = "Message Send Successfully";
+            setTimeout(() => {
+                msg.innerHTML = "";
+            }, 3000);
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+
+                    form.reset();
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+    <!-- cdn for the typed.js -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <!-- Setup and start animation! -->
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Blogging', 'Video Shooting', 'Video Editing', 'Graphic Designing'],
+            typeSpeed: 50,
+            loop: true,
+            loopCount: Infinity,
+            backSpeed: 60,
+
+        });
+    </script>
+
+</body>
+
+</html>
