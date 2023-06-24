@@ -452,6 +452,10 @@ form .btn {
 
 }
 
+.feedback-heading {
+    margin-bottom: 12px;
+}
+
 .copyright {
     width: 100%;
     text-align: center;
