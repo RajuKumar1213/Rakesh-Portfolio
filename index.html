@@ -52,7 +52,8 @@
                 <div class="about-col-2">
                     <p class="paragraph">HI. I am Rakesh from Dhanbad . I am 20 Years old . I am a youtuber and my
                         youtube channel name is Acid Boy , and I started blogging at youtube in 2022 December. I love
-                        to make blogging videos. Till now i have uploaded 50+ videos on my youtubr channel. Usually I shoot my
+                        to make blogging videos. Till now i have uploaded 50+ videos on my youtubr channel. Usually I
+                        shoot my
                         videos by GoPro as well as Iphone , So that the video quality is very enhanced and looks very
                         awesome. I am a Engineering student too. Right now I am in 4rth semester and My branch is
                         Computer Science . I took addmission in 2021. I will be passout from here in
@@ -166,7 +167,7 @@
             <div class="row">
                 <div class="contact-left">
                     <h1 class="sub-title">Contact Me</h1>
-                    <p><i class="fa-solid fa-paper-plane"></i> acidRaksh@gmail.com</p>
+                    <p><i class="fa-solid fa-envelope"></i> acidboy885@gmail.com</p>
                     <p><i class="fa-solid fa-square-phone"></i> +91 6206762728</p>
                     <div class="social-links">
                         <a href="#"><i class="fa-brands fa-facebook"></a></i>
@@ -232,9 +233,9 @@
             }, 3000);
             e.preventDefault()
             fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-                .then(response => {
-
-                    form.reset();
+            .then(response => {
+                form.reset();
+                console.error('Success!', "Submitted Successfully")
                 })
                 .catch(error => console.error('Error!', error.message))
         })
