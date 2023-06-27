@@ -58,6 +58,9 @@
                 </div>
             </div>
         </div>
+        <a class="uparrow" href="#">
+            <p class="arrow up"></p>
+        </a>
     </div>
 
     <!-- ----------------About----------------- -->
@@ -234,9 +237,10 @@
     </script>
     <script>
         const sidemenu = document.getElementById("sidemenu");
+        let handleSideBlur = sidemenu.style.right = "-200px";;
 
         function openmunu() {
-            sidemenu.style.right = "0";
+            handleSideBlur = sidemenu.style.right = "0";
         };
 
         function closemunu() {
@@ -246,6 +250,8 @@
         const handlenavlink = () => {
             sidemenu.style.right = "-200px";
         }
+
+
     </script>
 
     <script>

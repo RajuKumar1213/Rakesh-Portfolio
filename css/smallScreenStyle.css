@@ -132,9 +132,9 @@
 
 
     .social-links {
-        display: block;
-        margin-top: 40px;
 
+        display: block;
+        margin-right:-20px;
     }
 
 
@@ -202,4 +202,9 @@
     display: block;
     color: green;
     margin-top: -20px;
+}
+
+.uparrow {
+    height: 35px;
+    width: 35px;
 }
