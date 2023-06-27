@@ -509,7 +509,7 @@ nav .fa-solid {
 @media only screen and (max-width : 600px) {
 
     .container {
-        padding: 10px 5%;
+        padding: 0 5%;
     }
 
     #header {
@@ -698,5 +698,4 @@ nav .fa-solid {
     display: block;
     color: green;
     margin-top: -20px;
-
 }
