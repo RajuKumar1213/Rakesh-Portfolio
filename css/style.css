@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=PT+Serif&family=Ubuntu:wght@300&family=Yeseva+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&family=Libre+Baskerville:wght@700&family=PT+Serif&family=Rubik+Wet+Paint&family=Ubuntu:wght@300&family=Yeseva+One&display=swap');
+
 
 * {
     margin: 0;
@@ -35,19 +36,25 @@ body {
 
 .logo {
     font-size: 60px;
-    margin-top: 10px;
+    margin-top: -4px;
     font-weight: 900;
-    font-family: 'Yeseva One', cursive;
+    font-family: 'Rubik Wet Paint', cursive;
+    margin-left: -168px;
 }
 
 .logo span {
     color: #ff004f;
 }
 
+.nav-logo {
+    height: 80px;
+}
+
 nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-top: 15px;
     /* position: fixed; */
 }
 
@@ -86,7 +93,13 @@ nav ul li a:hover::after {
     width: 100%;
 }
 
+nav ul img {
+    display: none;
+}
 
+.social-links {
+    display: none;
+}
 
 .header-text {
     margin-top: 13%;
@@ -143,7 +156,7 @@ nav ul li a:hover::after {
 
 .header-text p {
     font-size: 30px;
-    font-family: cursive;
+    font-family: 'Rubik Wet Paint', cursive;
     color: rgb(159, 155, 155);
 }
 
@@ -492,6 +505,11 @@ nav .fa-solid {
 }
 
 @media only screen and (max-width : 600px) {
+
+    .container {
+        padding: 10px 5%;
+    }
+
     #header {
         /* background-image: url("../images/phone-background.png"); */
         padding-top: 2%;
@@ -500,7 +518,12 @@ nav .fa-solid {
     }
 
     .logo {
-        font-size: 40px;
+        font-size: 35px;
+        margin-left: -50px;
+    }
+
+    .nav-logo {
+        height: 60px;
     }
 
     .header-col-1,
@@ -515,7 +538,7 @@ nav .fa-solid {
 
     .header-col-2 {
         position: relative;
-        top: 100px;
+        top: 120px;
         left: -170px;
 
     }
@@ -534,8 +557,8 @@ nav .fa-solid {
     }
 
 
-    .header-text h1 {
-        font-size: 35px;
+    .header-text h2 {
+        font-size: 38px;
         font-weight: bolder;
     }
 
@@ -564,12 +587,53 @@ nav .fa-solid {
         font-size: 30px;
     }
 
+    nav ul li .fa-solid {
+        font-size: 20px;
+        display: inline;
+        margin-right: 10px;
+    }
+
     nav ul .fa-solid {
         display: block;
         font-size: 30px;
 
     }
 
+    nav ul .social-links {
+        margin-top: 20px;
+    }
+    
+    nav ul .social-links a {
+        text-decoration: none;
+        font-size: 30px;
+        margin-right: 10px;
+        color: #ababab;
+        display: inline-block;
+        transition: transform 0.4s;
+    }
+
+    nav ul img {
+        display: block;
+    }
+
+    .sidemenu-logo {
+        height: 120px;
+        border-radius: 50%;
+        border: 4px solid white;
+
+    }
+
+    .social-links {
+        display: block;
+        margin-top: 40px;
+
+    }
+
+
+
+    .social-links .fa-brands {
+        color: #fff;
+    }
     /* -----------about--------- */
     #about {
         width: 100vw;

@@ -13,14 +13,23 @@
     <div id="header">
         <div class="container">
             <nav>
+                <img src="./images/logo-modified.png" alt="logo" class="nav-logo">
                 <h1 class="logo">Aci<span>d</span> Bo<span>y.</span></h1>
                 <ul id="sidemenu">
                     <i class="fa-solid fa-xmark" onclick="closemunu()"></i>
-                    <li><a class="nav-link" href="#header">Home</a></li>
-                    <li><a class="nav-link" href="#about">About</a></li>
-                    <li><a class="nav-link" href="#services">Services</a></li>
-                    <li><a class="nav-link" href="#portfolio">Portfolio</a></li>
-                    <li><a class="nav-link" href="#contact">Contact</a></li>
+                    <li><a class="nav-link" href="#header" onclick="handlenavlink()"><i class="fa-solid fa-house"></i> Home</a></li>
+                    <li><a class="nav-link" href="#about" onclick="handlenavlink()"><i class="fa-solid fa-user"></i> About</a></li>
+                    <li><a class="nav-link" href="#services" onclick="handlenavlink()"><i class="fa-solid fa-screwdriver-wrench"></i> Services</a></li>
+                    <li><a class="nav-link" href="#portfolio" onclick="handlenavlink()"><i class="fa-solid fa-briefcase"></i> Portfolio</a></li>
+                    <li><a class="nav-link" href="#contact" onclick="handlenavlink()"><i class="fa-solid fa-address-book"></i> Contact</a></li>
+                    <img src="./images/profile-modified.png" alt="header-background" class="nav-logo sidemenu-logo">
+                    <div class="social-links">
+                        <a href="#"><i class="fa-brands fa-facebook"></a></i>
+                        <a href="#"><i class="fa-brands fa-square-instagram"></a></i>
+                        <a href="#"><i class="fa-brands fa-square-twitter"></a></i>
+                        <a href="#"><i class="fa-brands fa-linkedin"></a></i>
+                    </div>
+
                 </ul>
                 <i class="fa-solid fa-bars" onclick="openmunu()"></i>
             </nav>
@@ -215,8 +224,13 @@
 
         function openmunu() {
             sidemenu.style.right = "0";
-        }
+        };
+        
         function closemunu() {
+            sidemenu.style.right = "-200px";
+        }
+        ///sidemenu hide if cliked on nav link
+        const handlenavlink = ()=>{
             sidemenu.style.right = "-200px";
         }
     </script>
