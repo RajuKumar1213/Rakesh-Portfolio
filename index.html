@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>personal portfolio - Acid Rakesh</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/bigscreenstyle.css">
+    <link rel="stylesheet" href="./css/smallScreenStyle.css">
+
     <script src="https://kit.fontawesome.com/80aeb5ef42.js" crossorigin="anonymous"></script>
 </head>
 
@@ -17,17 +19,24 @@
                 <h1 class="logo">Aci<span>d</span> Bo<span>y.</span></h1>
                 <ul id="sidemenu">
                     <i class="fa-solid fa-xmark" onclick="closemunu()"></i>
-                    <li><a class="nav-link" href="#header" onclick="handlenavlink()"><i class="fa-solid fa-house"></i> Home</a></li>
-                    <li><a class="nav-link" href="#about" onclick="handlenavlink()"><i class="fa-solid fa-user"></i> About</a></li>
-                    <li><a class="nav-link" href="#services" onclick="handlenavlink()"><i class="fa-solid fa-screwdriver-wrench"></i> Services</a></li>
-                    <li><a class="nav-link" href="#portfolio" onclick="handlenavlink()"><i class="fa-solid fa-briefcase"></i> Portfolio</a></li>
-                    <li><a class="nav-link" href="#contact" onclick="handlenavlink()"><i class="fa-solid fa-address-book"></i> Contact</a></li>
+                    <li><a class="nav-link" href="#header" onclick="handlenavlink()"><i class="fa-solid fa-house"></i>
+                            Home</a></li>
+                    <li><a class="nav-link" href="#about" onclick="handlenavlink()"><i class="fa-solid fa-user"></i>
+                            About</a></li>
+                    <li><a class="nav-link" href="#services" onclick="handlenavlink()"><i
+                                class="fa-solid fa-screwdriver-wrench"></i> Services</a></li>
+                    <li><a class="nav-link" href="#portfolio" onclick="handlenavlink()"><i
+                                class="fa-solid fa-briefcase"></i> Portfolio</a></li>
+                    <li><a class="nav-link" href="#contact" onclick="handlenavlink()"><i
+                                class="fa-solid fa-address-book"></i> Contact</a></li>
                     <img src="./images/profile-modified.png" alt="header-background" class="nav-logo sidemenu-logo">
-                    <p class="paragraph">Mr. Rakesh Kumar</p>
-                    <div class="social-links">
+                    <p class="side-paragraph">Beta Rakesh</p>
+                    <div class="nav-social-links social-links">
                         <a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook"></a></i>
-                        <a href="https://www.instra.com" target="_blank"><i class="fa-brands fa-square-instagram"></a></i>
-                        <a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-square-twitter"></a></i>
+                        <a href="https://www.instra.com" target="_blank"><i
+                                class="fa-brands fa-square-instagram"></a></i>
+                        <a href="https://www.facebook.com" target="_blank"><i
+                                class="fa-brands fa-square-twitter"></a></i>
                         <a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-linkedin"></a></i>
                     </div>
 
@@ -37,7 +46,8 @@
 
             <div class="header-text">
                 <div class="header-col-1">
-                    <p> <a target="_blank" href="https://www.youtube.com/@acidboy6566"> <i class="fa-brands fa-youtube"></i> </a>Youtuber</p>
+                    <p> <a target="_blank" href="https://www.youtube.com/@acidboy6566"> <i
+                                class="fa-brands fa-youtube"></i> </a>Youtuber</p>
                     <h2>Hi I,m <span>Rakesh</span> <br> from Dhanbad, and I'm passionate of :</h2>
 
                     <!-- Element to contain animated typing -->
@@ -61,7 +71,9 @@
                 </div>
                 <div class="about-col-2">
                     <p class="paragraph">HI. I am Rakesh from Dhanbad . I am 20 Years old . I am a youtuber and my
-                        youtube channel name is <a class="youtube-link" target="_blank" href="https://www.youtube.com/@acidboy6566"> <i class="fa-brands fa-youtube"></i> acid boy</a> , and I started blogging at youtube in 2022 December. I love
+                        youtube channel name is <a class="youtube-link" target="_blank"
+                            href="https://www.youtube.com/@acidboy6566"> <i class="fa-brands fa-youtube"></i> acid
+                            boy</a> , and I started blogging at youtube in 2022 December. I love
                         to make blogging videos. Till now i have uploaded 50+ videos on my youtubr channel. Usually I
                         shoot my
                         videos by GoPro as well as Iphone , So that the video quality is very enhanced and looks very
@@ -226,12 +238,12 @@
         function openmunu() {
             sidemenu.style.right = "0";
         };
-        
+
         function closemunu() {
             sidemenu.style.right = "-200px";
         }
         ///sidemenu hide if cliked on nav link
-        const handlenavlink = ()=>{
+        const handlenavlink = () => {
             sidemenu.style.right = "-200px";
         }
     </script>
@@ -248,9 +260,9 @@
             }, 3000);
             e.preventDefault()
             fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-            .then(response => {
-                form.reset();
-                console.error('Success!', "Submitted Successfully")
+                .then(response => {
+                    form.reset();
+                    console.error('Success!', "Submitted Successfully")
                 })
                 .catch(error => console.error('Error!', error.message))
         })
