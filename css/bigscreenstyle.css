@@ -28,6 +28,7 @@ body {
     background-position: center;
     z-index: -1;
 
+
 }
 
 .container {
@@ -35,28 +36,51 @@ body {
 }
 
 .logo {
-    font-size: 60px;
+    font-size: 50px;
     margin-top: -4px;
     font-weight: 900;
-    font-family: 'Yeseva One', cursive;
+    font-family: 'Rubik Wet Paint', cursive;
+    margin-right: 180px;
 
-    margin-left: -168px;
+
+
+    /* stiky navbar  */
+}
+.red {
+    color: #ff004f;
+}
+.black {
+    color: #010f1d;
 }
 
-.logo span {
-    color: #ff004f;
+.redbackground {
+    background: #ff004f;
+    transform: translateY(-8px);
+    position: relative;
 }
 
 .nav-logo {
-    height: 80px;
+    height: 65px;
+    margin-right: 10px;
+
 }
 
-nav {
+#navbar {
+    padding-top: 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-top: 15px;
-    /* position: fixed; */
+    /* margin-top: 15px; */
+    position: fixed;
+    z-index: 1;
+    transition: background 0.5s , color 0.5s , transform 0.5s;
+    width: 100%;
+
+  
+}
+
+.black {
+    color: #010f1d;
 }
 
 nav ul {
@@ -108,7 +132,7 @@ nav ul img {
 }
 
 .header-text {
-    margin-top: 13%;
+    margin-top: 22%;
     font-size: 30px;
     display: flex;
 
@@ -161,7 +185,7 @@ nav ul img {
 }
 
 .header-text p {
-    font-size: 30px;
+    font-size: 25px;
     font-family: 'Rubik Wet Paint', cursive;
     color: rgb(159, 155, 155);
 }
@@ -273,14 +297,14 @@ nav ul img {
 
 }
 
-.service-box {
+#services .service-box {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-gap: 40px;
     margin-top: 50px;
 }
 
-.service-box div {
+#services .service-box div {
     background: #262626;
     padding: 40px;
     font-size: 14px;
@@ -290,18 +314,18 @@ nav ul img {
     transition: backround 0.5s, transform 0.5s;
 }
 
-.service-box div h2 {
+#services .service-box div h2 {
     font-size: 30px;
     font-weight: 900;
     margin: 10px 0 10px;
 }
 
-.service-box div i {
+#services .service-box div i {
     font-size: 50px;
     margin-bottom: 15px;
 }
 
-.service-box div a {
+#services .service-box div a {
     text-decoration: none;
     font-size: 14px;
     color: white;
@@ -310,7 +334,7 @@ nav ul img {
     margin-top: 15px;
 }
 
-.service-box div:hover {
+#services .service-box div:hover {
     background: #ff004f;
     transform: translateY(-10px)
 }
@@ -515,7 +539,13 @@ nav .fa-solid {
     background-color: #ff004f;
 }
 
-.uparrow {
+/* side up arrow  */
+#sideupbtn {
+    transition:  transform 0.5s;
+}
+
+
+.arrowup {
     height: 45px;
     width: 45px;
     background-color: #fff;
@@ -527,17 +557,19 @@ nav .fa-solid {
     float: right;
     margin-right: 8px;
     position: fixed;
-    bottom:8px;
+    bottom: 8px;
     right: 0;
-    transition: background 0.3s;
     z-index: 1;
+    transition: background 0.3s ;
 }
 
-.uparrow:hover {
+
+
+.arrowup:hover {
     background: #ff004f;
 }
 
-.uparrow:hover .arrow {
+.arrowup:hover .arrow {
     border: solid white;
     border-width: 0 5px 5px 0;
     display: inline-block;
@@ -551,10 +583,17 @@ nav .fa-solid {
     display: inline-block;
     padding: 4px;
     border-radius: 2px;
-    transition: border 0.3s;
+    
 }
 
 .up {
     transform: rotate(-135deg);
     -webkit-transform: rotate(-135deg);
 }
+
+.hide {
+    transform: translateY(10px);
+    display: none;
+
+}
+

@@ -13,13 +13,27 @@
         width: 100vw;
     }
 
+    #navbar {
+        padding-top: 7px;
+        display: flex;
+        justify-content: space-between;
+        position: fixed;
+        z-index: 1;
+        transition: background 0.5s, color 0.5s, transform 0.5s;
+        width: fit-content;
+        height: 80px;
+
+    }
+
     .logo {
-        font-size: 35px;
-        margin-left: -50px;
+        font-size: 30px;
+        width: 134px;
+        /* margin-left: 10px; */
     }
 
     .nav-logo {
-        height: 60px;
+        height: 50px;
+
     }
 
     .header-col-1,
@@ -45,17 +59,17 @@
 
 
     .header-text {
-        margin-top: 1%;
+        margin-top: 4%;
         font-size: 20px;
         display: flex;
         flex-direction: column;
-        margin: 40px 0;
+        margin: 75px 0;
     }
 
 
     .header-text h2 {
         font-size: 38px;
-        margin: 25px 0;
+        margin: 12px 0;
 
     }
 
@@ -64,7 +78,7 @@
         flex-direction: column;
         position: fixed;
         top: 0;
-        right: -200px;
+        right: -100px;
         background: #ff004f;
         height: 100vh;
         width: 200px;
@@ -79,9 +93,12 @@
         margin: 17px 25px;
     }
 
-    nav .fa-solid {
+    nav #openmunu {
         display: block;
         font-size: 30px;
+        position: relative;
+        top: -3px;
+        left: -76px;
     }
 
     nav ul li .fa-solid {
@@ -109,9 +126,9 @@
         transition: transform 0.4s;
     }
 
-.nav-social-links {
-    display: block;
-}
+    .nav-social-links {
+        display: block;
+    }
 
     .sidemenu-logo {
         display: block;
@@ -134,7 +151,7 @@
     .social-links {
 
         display: block;
-        margin-right:-20px;
+        margin-right: -20px;
     }
 
 
@@ -147,6 +164,7 @@
     #about {
         width: 100vw;
         margin: auto;
+        margin-top: -130px;
         /* text-align: center; */
     }
 

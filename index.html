@@ -7,42 +7,45 @@
     <title>personal portfolio - Acid Rakesh</title>
     <link rel="stylesheet" href="./css/bigscreenstyle.css">
     <link rel="stylesheet" href="./css/smallScreenStyle.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
 
     <script src="https://kit.fontawesome.com/80aeb5ef42.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
+
+    <nav class="container" id="navbar">
+        <img src="./images/logo-modified.png" alt="logo" class="nav-logo">
+        <h1 class="logo">Aci<span id="d">d</span> Bo<span id="y">y.</span></h1>
+        <ul id="sidemenu">
+            <i class="fa-solid fa-xmark" onclick="closemunu()"></i>
+            <li><a class="nav-link" href="#header" onclick="handlenavlink()"><i class="fa-solid fa-house"></i>
+                    Home</a></li>
+            <li><a class="nav-link" href="#about" onclick="handlenavlink()"><i class="fa-solid fa-user"></i>
+                    About</a></li>
+            <li><a class="nav-link" href="#services" onclick="handlenavlink()"><i
+                        class="fa-solid fa-screwdriver-wrench"></i> Services</a></li>
+            <li><a class="nav-link" href="#portfolio" onclick="handlenavlink()"><i
+                        class="fa-solid fa-briefcase"></i> Portfolio</a></li>
+            <li><a class="nav-link" href="#contact" onclick="handlenavlink()"><i
+                        class="fa-solid fa-address-book"></i> Contact</a></li>
+            <img src="./images/profile-modified.png" alt="header-background" class="nav-logo sidemenu-logo">
+            <p class="side-paragraph">Beta Rakesh</p>
+            <div class="nav-social-links social-links">
+                <a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook"></a></i>
+                <a href="https://www.instra.com" target="_blank"><i
+                        class="fa-brands fa-square-instagram"></a></i>
+                <a href="https://www.facebook.com" target="_blank"><i
+                        class="fa-brands fa-square-twitter"></a></i>
+                <a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-linkedin"></a></i>
+            </div>
+
+        </ul>
+        <i id="openmunu" class="fa-solid fa-bars" onclick="openmunu()"></i>
+    </nav>
     <div id="header">
         <div class="container">
-            <nav>
-                <img src="./images/logo-modified.png" alt="logo" class="nav-logo">
-                <h1 class="logo">Aci<span>d</span> Bo<span>y.</span></h1>
-                <ul id="sidemenu">
-                    <i class="fa-solid fa-xmark" onclick="closemunu()"></i>
-                    <li><a class="nav-link" href="#header" onclick="handlenavlink()"><i class="fa-solid fa-house"></i>
-                            Home</a></li>
-                    <li><a class="nav-link" href="#about" onclick="handlenavlink()"><i class="fa-solid fa-user"></i>
-                            About</a></li>
-                    <li><a class="nav-link" href="#services" onclick="handlenavlink()"><i
-                                class="fa-solid fa-screwdriver-wrench"></i> Services</a></li>
-                    <li><a class="nav-link" href="#portfolio" onclick="handlenavlink()"><i
-                                class="fa-solid fa-briefcase"></i> Portfolio</a></li>
-                    <li><a class="nav-link" href="#contact" onclick="handlenavlink()"><i
-                                class="fa-solid fa-address-book"></i> Contact</a></li>
-                    <img src="./images/profile-modified.png" alt="header-background" class="nav-logo sidemenu-logo">
-                    <p class="side-paragraph">Beta Rakesh</p>
-                    <div class="nav-social-links social-links">
-                        <a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook"></a></i>
-                        <a href="https://www.instra.com" target="_blank"><i
-                                class="fa-brands fa-square-instagram"></a></i>
-                        <a href="https://www.facebook.com" target="_blank"><i
-                                class="fa-brands fa-square-twitter"></a></i>
-                        <a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-linkedin"></a></i>
-                    </div>
-
-                </ul>
-                <i class="fa-solid fa-bars" onclick="openmunu()"></i>
-            </nav>
+           
 
             <div class="header-text">
                 <div class="header-col-1">
@@ -58,7 +61,7 @@
                 </div>
             </div>
         </div>
-        <a class="uparrow" href="#">
+        <a id="sideupbtn"  class="arrowup" href="#">
             <p class="arrow up"></p>
         </a>
     </div>
@@ -119,10 +122,14 @@
     </div>
 
     <!-- ---------------My services ----------- -->
+    <!-- swiper for small screen  -->
 
-    <div class="" id="services">
+
+    <!-- swiper do not get applied in the big screen -->
+
+    <div id="services">
         <div class="container">
-            <h1 class="sub-title">My Services</h1>
+            <h1>My Services</h1>
             <div class="service-box">
                 <div>
                     <i class="fa-solid fa-video"></i>
@@ -285,6 +292,48 @@
             backSpeed: 60,
         });
     </script>
+
+    <script>
+        let sideupbtn = document.getElementById("sideupbtn");
+        var myScrollFunc = function () {
+            var y = window.scrollY;
+            if (y >= 100) {
+                sideupbtn.classList.remove("hide")
+            }
+            else if (y <= 100) {
+                sideupbtn.classList.add("hide")
+            }
+        };
+
+        window.addEventListener("scroll", myScrollFunc);
+    </script>
+    <script>
+        let navbar = document.getElementById("navbar");
+        let d = document.getElementById("d");
+        let y = document.getElementById("y");
+  
+        var myScrollFunc = function () {
+            var x = window.scrollY;
+            if (x >= 100) {
+                navbar.classList.add("redbackground");
+                d.classList.add("black")
+                y.classList.add("black")
+                d.classList.remove("red")
+                y.classList.remove("red")
+            }
+            else if (x <= 100) {
+                navbar.classList.remove("redbackground");
+                d.classList.add("red")
+                y.classList.add("red")
+                d.classList.remove("black")
+                y.classList.remove("black")
+            }
+        };
+
+        window.addEventListener("scroll", myScrollFunc);
+    </script>
+
+
 
 </body>
 
