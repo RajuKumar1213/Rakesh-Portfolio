@@ -16,7 +16,8 @@
 
     <nav class="container" id="navbar">
         <img src="./images/logo-modified.png" alt="logo" class="nav-logo">
-        <h1 class="logo">Aci<span id="d">d</span> Bo<span id="y">y.</span></h1>
+        <h1 class="logo">Aci<span id="d" class="logo-special-text">d</span> Bo<span class="logo-special-text"
+                id="y">y.</span></h1>
         <ul id="sidemenu">
             <i class="fa-solid fa-xmark" onclick="closemunu()"></i>
             <li><a class="nav-link" href="#header" onclick="handlenavlink()"><i class="fa-solid fa-house"></i>
@@ -25,18 +26,16 @@
                     About</a></li>
             <li><a class="nav-link" href="#services" onclick="handlenavlink()"><i
                         class="fa-solid fa-screwdriver-wrench"></i> Services</a></li>
-            <li><a class="nav-link" href="#portfolio" onclick="handlenavlink()"><i
-                        class="fa-solid fa-briefcase"></i> Portfolio</a></li>
-            <li><a class="nav-link" href="#contact" onclick="handlenavlink()"><i
-                        class="fa-solid fa-address-book"></i> Contact</a></li>
+            <li><a class="nav-link" href="#portfolio" onclick="handlenavlink()"><i class="fa-solid fa-briefcase"></i>
+                    Portfolio</a></li>
+            <li><a class="nav-link" href="#contact" onclick="handlenavlink()"><i class="fa-solid fa-address-book"></i>
+                    Contact</a></li>
             <img src="./images/profile-modified.png" alt="header-background" class="nav-logo sidemenu-logo">
-            <p class="side-paragraph">Beta Rakesh</p>
+            <p class="side-paragraph">Mr. Rakesh Kumar</p>
             <div class="nav-social-links social-links">
                 <a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook"></a></i>
-                <a href="https://www.instra.com" target="_blank"><i
-                        class="fa-brands fa-square-instagram"></a></i>
-                <a href="https://www.facebook.com" target="_blank"><i
-                        class="fa-brands fa-square-twitter"></a></i>
+                <a href="https://www.instra.com" target="_blank"><i class="fa-brands fa-square-instagram"></a></i>
+                <a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-square-twitter"></a></i>
                 <a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-linkedin"></a></i>
             </div>
 
@@ -45,7 +44,7 @@
     </nav>
     <div id="header">
         <div class="container">
-           
+
 
             <div class="header-text">
                 <div class="header-col-1">
@@ -61,7 +60,7 @@
                 </div>
             </div>
         </div>
-        <a id="sideupbtn"  class="arrowup" href="#">
+        <a id="sideupbtn" class="arrowup" href="#">
             <p class="arrow up"></p>
         </a>
     </div>
@@ -83,9 +82,7 @@
                         to make blogging videos. Till now i have uploaded 50+ videos on my youtubr channel. Usually I
                         shoot my
                         videos by GoPro as well as Iphone , So that the video quality is very enhanced and looks very
-                        awesome. I am a Engineering student too. Right now I am in 4rth semester and My branch is
-                        Computer Science . I took addmission in 2021. I will be passout from here in
-                        2023. After that I will do bTech. </p>
+                        awesome. I am a Engineering student too. Right now I am learning to code. </p>
                     <div class="tab-title">
                         <p class="tab-link active-link" onclick="opentab('skills')">Skills</p>
                         <p class="tab-link" onclick="opentab('experience')">Experience</p>
@@ -244,10 +241,10 @@
     </script>
     <script>
         const sidemenu = document.getElementById("sidemenu");
-        let handleSideBlur = sidemenu.style.right = "-200px";;
+        sidemenu.style.right = "-200px";;
 
         function openmunu() {
-            handleSideBlur = sidemenu.style.right = "0";
+            sidemenu.style.right = "0";
         };
 
         function closemunu() {
@@ -258,6 +255,15 @@
             sidemenu.style.right = "-200px";
         }
 
+        var myScrollFunc = function () {
+            var x = window.scrollY;
+            if (x >= 100) {
+                sidemenu.style.right = "-200px";
+            }
+
+        };
+
+        window.addEventListener("scroll", myScrollFunc);
 
     </script>
 
@@ -311,7 +317,7 @@
         let navbar = document.getElementById("navbar");
         let d = document.getElementById("d");
         let y = document.getElementById("y");
-  
+
         var myScrollFunc = function () {
             var x = window.scrollY;
             if (x >= 100) {

@@ -42,10 +42,13 @@ body {
     font-family: 'Rubik Wet Paint', cursive;
     margin-right: 180px;
 
-
-
-    /* stiky navbar  */
 }
+
+.logo-special-text {
+    font-family: 'Rubik Wet Paint', cursive;
+
+}
+
 .red {
     color: #ff004f;
 }
